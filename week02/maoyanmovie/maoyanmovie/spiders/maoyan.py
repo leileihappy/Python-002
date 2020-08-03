@@ -23,7 +23,6 @@ class MaoyanSpider(scrapy.Spider):
         items = []
         if response == None:
             return items
-        print('===========================')
         i = 0 
         movies_list = Selector(response=response).xpath('//dl[@class="movie-list"]//dd')
         for movie in movies_list:

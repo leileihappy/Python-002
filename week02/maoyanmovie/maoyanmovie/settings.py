@@ -54,8 +54,25 @@ DOWNLOAD_DELAY = 3
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    'maoyanmovie.middlewares.MaoyanmovieDownloaderMiddleware': 543,
-   'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware':400
+   'maoyanmovie.middlewares.RandomHttpProxyMiddleware':400
 }
+
+HTTP_PROXY_LIST = [
+   "https://117.70.38.243:766",
+   "https://106.57.151.242:23564",
+   "https://220.188.133.6:36410",
+   "https://116.249.74.120:36410",
+   "https://220.186.93.147:23564",
+   "https://114.103.137.215:36410",
+   "https://114.102.3.38:36410",
+   "https://111.72.96.25:766",
+   "https://100.65.17.86:3617",
+   "https://61.131.149.63:23564",
+   "https://111.178.138.11:766",
+   "https://182.131.104.7:766",
+   "https://106.57.150.109:3617",
+   "https://183.161.7.215:3617",
+]
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
